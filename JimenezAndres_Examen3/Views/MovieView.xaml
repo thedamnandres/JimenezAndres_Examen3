@@ -12,14 +12,14 @@
         <StackLayout Padding="20" Spacing="20">
             <Entry x:Name="ajimenez_entryCountry" 
                    Text="{Binding MovieName}" 
-                   Placeholder="Ingresa el nombre del país" />
+                   Placeholder="Input movie's name" />
 
             <Button x:Name="ajimenez_btnSearch" 
-                    Text="Buscar" 
+                    Text="Search" 
                     Command="{Binding SearchMovieCommand}" />
             
             <Button x:Name="ajimenez_btnClear" 
-                    Text="Limpiar" 
+                    Text="Clear" 
                     Command="{Binding LimpiarCommand}" />
 
             <Label x:Name="ajimenez_lblResult" 
