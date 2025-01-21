@@ -1,0 +1,40 @@
+# Build Folders
+bin/
+obj/
+
+# Rider project files
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+
+# Rider specific
+.idea/
+.idea_modules/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/gradle.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/modules.xml
+.idea/scopes/
+.idea/inspectionProfiles/
+.idea/assetWizard.xml
+.idea/gradle.xml
+.idea/encodings.xml
+.idea/markdown_navigator.xml
