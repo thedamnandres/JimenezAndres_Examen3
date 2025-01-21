@@ -23,7 +23,7 @@ public partial class ListMovieViewModel : ObservableObject
         var listaMovies = _movieService.GetMovies();
         Movies = new ObservableCollection<string>(
             listaMovies.Select(m =>
-                $"Titulo: {m.MovieName}\nGenero: {m.Gender}\nMain Actor: {m.Actor}\nAwards: {m.Awards}\nWebsite: {m.Website}\nMy Name: Andres Jimenez"
+                $"Titulo: {m.MovieName}\nGenero: {m.Gender}\nMain Actor: {m.Actor}\nAwards: {m.Awards}\nWebsite: {m.Website}\nAJimenez: Andres Jimenez"
             )
         );
     }
