@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:JimenezAndres_Examen3.ViewModels"
+             x:Class="JimenezAndres_Examen3.Views.MovieView">
+    <ContentPage.BindingContext>
+        <viewModels:MovieViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+            <Entry x:Name="ajimenez_entryCountry" 
+                   Text="{Binding MovieName}" 
+                   Placeholder="Ingresa el nombre del país" />
+
+            <Button x:Name="ajimenez_btnSearch" 
+                    Text="Buscar" 
+                    Command="{Binding SearchMovieCommand}" />
+            
+            <Button x:Name="ajimenez_btnClear" 
+                    Text="Limpiar" 
+                    Command="{Binding LimpiarCommand}" />
+
+            <Label x:Name="ajimenez_lblResult" 
+                   Text="{Binding Mensaje}"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="Fill"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

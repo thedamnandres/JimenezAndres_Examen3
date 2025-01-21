@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="JimenezAndres_Examen3.app/JimenezAndres_Examen3">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>JimenezAndres_Examen3.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>JimenezAndres_Examen3.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/thedamnandres/RiderProjects/JimenezAndres_Examen3/JimenezAndres_Examen3/obj/Debug/net8.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>JimenezAndres_Examen3.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/thedamnandres/RiderProjects/JimenezAndres_Examen3/JimenezAndres_Examen3</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

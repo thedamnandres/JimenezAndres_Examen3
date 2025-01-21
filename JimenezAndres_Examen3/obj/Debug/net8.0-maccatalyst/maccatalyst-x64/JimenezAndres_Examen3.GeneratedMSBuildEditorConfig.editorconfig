@@ -50,3 +50,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = JimenezAndres_Examen3.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/thedamnandres/RiderProjects/JimenezAndres_Examen3/JimenezAndres_Examen3/Views/MovieView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = JimenezAndres_Examen3.Views.MovieView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MovieView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MovieView.xaml
