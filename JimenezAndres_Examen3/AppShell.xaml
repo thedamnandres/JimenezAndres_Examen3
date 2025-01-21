@@ -12,6 +12,9 @@
         <Tab Title="Buscar País">
             <ShellContent ContentTemplate="{DataTemplate views:MovieView}" />
         </Tab>
+        <Tab Title="Buscar País">
+            <ShellContent ContentTemplate="{DataTemplate views:ListMovieView}" />
+        </Tab>
     </TabBar>
 
 </Shell>

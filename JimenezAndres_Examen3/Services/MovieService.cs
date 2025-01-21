@@ -7,22 +7,22 @@ namespace JimenezAndres_Examen3.Services;
 public class MovieService 
 {
 
-    private readonly SQLiteAsyncConnection _database;
+    private readonly SQLiteConnection _database;
 
     public MovieService()
     {
         var dbPath = Path.Combine(FileSystem.AppDataDirectory, "jimenezandres_movies.db");
-        _database = new SQLiteAsyncConnection(dbPath);
-        _database.CreateTableAsync<Movie>().Wait();
+        _database = new SQLiteConnection(dbPath);
+        _database.CreateTable<Movie>();
     }
 
-    public async Task AddMovieAsync(Movie movie)
+    public void AddMovie(Movie movie)
     {
-        await _database.InsertAsync(movie);
+        _database.Insert(movie);
     }
 
-    public async Task<List<Movie>> GetMoviesAsync()
+    public List<Movie> GetMovies()
     {
-        return await _database.Table<Movie>().ToListAsync();
+        return _database.Table<Movie>().ToList();
     }
 }

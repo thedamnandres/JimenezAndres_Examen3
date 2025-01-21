@@ -10,6 +10,7 @@ namespace JimenezAndres_Examen3.ViewModels;
 public partial class MovieViewModel : ObservableObject
 {
     private readonly MovieService _movieService;
+    private readonly ListMovieViewModel _listMovieViewModel;
 
     [ObservableProperty]
     private string movieName;
@@ -22,26 +23,9 @@ public partial class MovieViewModel : ObservableObject
     public MovieViewModel()
     {
         _movieService = new MovieService();
-        LoadMoviesAsync();
+        _listMovieViewModel = new ListMovieViewModel();
     }
-
-    private async void LoadMoviesAsync()
-    {
-        try
-        {
-            var movies = await _movieService.GetMoviesAsync();
-            Movies.Clear();
-            foreach (var movie in movies)
-            {
-                Movies.Add(movie);
-            }
-        }
-        catch (Exception e)
-        {
-            Mensaje = $"Error cargando películas: {e.Message}";
-        }
-    }
-
+    
     [RelayCommand]
     public async Task SearchMovieAsync()
     {
@@ -67,9 +51,8 @@ public partial class MovieViewModel : ObservableObject
                     Awards = movie.Awards,
                     Website = movie.Website
                 };
-
-                await _movieService.AddMovieAsync(newMovie);
-                Movies.Add(newMovie);
+                
+                _movieService.AddMovie(newMovie);
             }
             else
             {
@@ -81,7 +64,6 @@ public partial class MovieViewModel : ObservableObject
             Mensaje = $"Error: {e.Message}";
         }
     }
-    
     
     [RelayCommand]
     public void Limpiar()
